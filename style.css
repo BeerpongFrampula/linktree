@@ -168,6 +168,21 @@ a:active {
   background-color: #ffce76;
 }
 
+ /* container della voce Privacy */
+  .privacy_div {
+    margin-top: 0.20em;      /* spazio tra card e Privacy */
+    text-align: center;   /* centra orizzontalmente */
+  }
+
+  /* link Privacy in stile scuro/giallo */
+  .privacy_div a {
+    color: #ffce76;            /* stesso giallo dei bottoni */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: color 0.2s ease;
+  }
+
 @media (max-width: 315px) {
   body {
     font-size: 0.9em;
