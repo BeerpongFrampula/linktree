@@ -5,6 +5,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 ::selection {
   color: #ffce76;
   background-color: #1d1919;
@@ -24,18 +25,8 @@ body {
   );
 }
 
-.art1 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-.art2 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 28em;
-}
 /* -----------------------------------------  */
+
 .profile_card_div {
   flex: 0.8;
   display: flex;
