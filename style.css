@@ -37,7 +37,7 @@ body {
 }
 
 /* -----------------------------------------  */
-
+/* Profile picture and Text info */
 .whoami_div {
   display: flex;
   flex-direction: column;
@@ -65,7 +65,6 @@ body {
   border: #ffce76 5px solid;
   /* border-top: none; */
 }
-
 .whoami_div .textinfo {
   text-align: center;
   color: #ffce76;
@@ -79,32 +78,14 @@ body {
   font-size: 2em;
   transition: 0.5s ease;
 }
-/* Effetto di espansione del testo 'Beerpong Frampula' quando passi sopra con il 
-mouse 
-
- .whoami_div .textinfo .name:hover {
-  letter-spacing: 0.09em;
-} 
-
-*/
 .whoami_div .textinfo .profession {
   letter-spacing: 0.09em;
   font-size: 0.8em;
   opacity: 0.5;
 }
 
-/* Effetto di opacità nella scritta secondaria sotto 'Beerpong Frampula' quando passi
-sopra con il mouse
-
-.whoami_div .textinfo .profession:hover {
-  opacity: 1;
-}
-
-*/
-
-
 /* -----------------------------------------  */
-
+/* Links Card */
 .linkscard_div {
   /* width: 100%; */
   flex: 1;
@@ -116,7 +97,6 @@ sopra con il mouse
   /*border-top: #ffce76 2px solid;
   border-bottom: #ffce76 2px solid; */
 }
-
 .linkscard_div ul {
   display: flex;
   flex-direction: column;
@@ -137,11 +117,11 @@ sopra con il mouse
   border-radius: 10em;
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra il contenuto orizzontalmente */
+  justify-content: center; 
   border: #ffce76 2px solid;
   font-weight: 900;
   transition: 0.2s ease;
-  width: 300px; /* Imposta una larghezza fissa */
+  width: 300px; 
 }
 .linkscard_div ul a:hover,
 a:active {
@@ -149,7 +129,6 @@ a:active {
   background-color: #1d1919;
   color: #ffce76;
 }
-
 .linkscard_div ul a img {
   margin: 0em 0.2em;
   border-radius: 100%;
@@ -159,26 +138,29 @@ a:active {
   background-color: #ffce76;
 }
 
- /* container della voce Privacy */
-  .privacy_div {
-    margin-top: 0.20em;      /* spazio tra card e Privacy */
-    text-align: center;   /* centra orizzontalmente */
-  }
+/* -----------------------------------------  */
+/* Privacy Policy */
+.privacy_div {
+  margin-top: 0.20em;      
+  text-align: center; 
+} 
+.privacy_div a {
+  color: #ffce76;            
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9em;
+  transition: color 0.2s ease;
+}
 
-  /* link Privacy in stile scuro/giallo */
-  .privacy_div a {
-    color: #ffce76;            /* stesso giallo dei bottoni */
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9em;
-    transition: color 0.2s ease;
-  }
+/* -----------------------------------------  */  
 
+/** @media --> Mobile design **/
 @media (max-width: 315px) {
   body {
     font-size: 0.9em;
   }
 }
+
 @media (max-width: 275px) {
   .list-item {
     margin: 0em;
@@ -190,23 +172,17 @@ a:active {
   }
 }
 
-
 @media (max-width: 768px) {
-  /* Riduci i margini generali e l'altezza della card */
   .profile_card_div {
     margin: 1em;
     flex: 1;
   }
-  
-  /* Riduci la dimensione dell'immagine */
   .whoami_div .profilepic_div .profilepic {
     width: 60%;
   }
-  
   .linkscard_div {
-    padding: 2em 0.5em; /* meno spazio ai lati della card */
+    padding: 2em 0.5em; 
   }
-
   /* Adatta i pulsanti/link per schermi piccoli */
   .linkscard_div ul a {
 	  display: flex;
@@ -222,47 +198,37 @@ a:active {
 
 @media screen and (orientation: portrait) {
   .profile_card_div {
-    margin: 1em 1em; /* Più spazio in verticale */
+    margin: 1em 1em; 
   }
-  
   .linkscard_div ul {
-    flex-direction: column; /* Assicurati che gli elementi siano disposti in colonna */
-	align-items: center; /* Assicura che i link siano centrati */
+    flex-direction: column; 
+	  align-items: center; 
   }
-  
   .linkscard_div ul a {
-	  display: flex;             /* Assicura il layout flessibile */
-      justify-content: center;   /* Centra il contenuto orizzontalmente */
-      align-items: center;       /* Centra il contenuto verticalmente */
-      flex-direction: row;       /* Mantiene icona e testo in riga */
+	  display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    flex-direction: row;       
 	  width: 80vw;       /* Usa l'80% della larghezza del viewport */
-	  max-width: 400px;  /* Imposta una larghezza massima per evitare che diventino troppo larghi */
+	  max-width: 400px;  
 	  padding: 1em 2em; /* Riduci il padding per adattarsi allo schermo più stretto */
-	  font-size: 1em;   /* Regola la dimensione del testo se necessario */
+	  font-size: 1em;   
   }
-
-  /* container della voce Privacy */
   .privacy_div {
-    margin-top: 0.20em;      /* spazio tra card e Privacy */
-    text-align: center;   /* centra orizzontalmente */
+    margin-top: 0.20em;    
+    text-align: center;   
   }
-
-  /* link Privacy in stile scuro/giallo */
   .privacy_div a {
-    color: #ffce76;            /* stesso giallo dei bottoni */
+    color: #ffce76;            
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9em;
     transition: color 0.2s ease;
   }
-
-  /* hover: inverte i colori */
   .privacy_div a:hover {
     color: #1d1919;
     background: #ffce76;
     padding: 0.2em 0.6em;
     border-radius: 0.5em;
   }
-
-
 }
