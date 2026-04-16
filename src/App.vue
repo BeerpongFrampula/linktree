@@ -18,13 +18,13 @@ const socialLinks: SocialLink[] = [
     socialName: 'Facebook',
     url:'https://www.facebook.com/beerpongframpula/?locale=it_IT',
     icon: `${baseUrl}icons/facebook.png`
-  }, 
+  }, /* 
   {
     id: 2, 
     socialName: 'Modulo Iscrizioni', 
     url: 'https://tally.so/r/wg82YD', 
     icon: `${baseUrl}icons/bicchieri.png`
-  },
+  }, */
   {
     id: 3, 
     socialName: 'Telegram', 
